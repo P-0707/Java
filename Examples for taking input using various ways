@@ -1,0 +1,46 @@
+//1. Scanner Class
+
+import java.util.Scanner;
+
+public class ScannerInputExample {
+  public static void main(String args[]) {
+    Scanner sc = new Scanner(System.in);
+
+    //prompt and read the name
+    System.out.print("Enter your name:  ");
+    String name = sc.nextLine();
+
+    //prompt and read the age
+    System.out.print("Enter your age:  ");
+    int age = sc.nextInt();
+
+    //newline character
+    sc.nextLine();
+
+    sc.close();
+
+    //display user name and age
+    System.out.println( "NAME: " + name );
+    System.out.println( "AGE: " + age );
+  }
+}
+
+
+//2.  BufferedReader Class
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class BufferedReaderExample {
+  public static void main(String args[]) {
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+    System.out.println("Enter your name: ");
+    String name = br.readLine();
+
+
+  }
+}
+
+#incomplete.............................................
