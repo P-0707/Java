@@ -1,0 +1,41 @@
+// In this we will try to know many ways to take the input from the user
+
+//1. Scanner class
+//remember to import java.util package to import Scanner class
+Scanner sc = new Scanner(System.in);
+System.out.print("Enter your name: ");
+String name = sc.nextLine();
+System.out.print("Enter your age: ");
+int age = sc.nextInt();
+sc.nextLine(); // Consume the newline character
+sc.close();
+
+
+//2. BufferedReader class
+//remember to import java.io package for importing the BufferedReader class
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+String name = br.readLiner();
+br.close();
+
+//3. Console class for console input
+Console cl = System.console();
+char[] passwordArray = cl.readPassword("Enter password: ");
+String password = new String(passwordArray);
+
+//4. JOptionPane for GUI input
+import javax.swing.JOptionPane;
+String name = JOptionPane.showInputDialog("Enter your name");
+
+//5. Command-line arguments
+public class CommandLineInputExample {
+  public static void main(String args[]) {
+    String name = args[0];
+    int age = Integer.parseInt(args[1]);
+      System.out.println("Name: " + name);
+      System.out.println("age: " + age);
+     }
+}
+
+
+
+
