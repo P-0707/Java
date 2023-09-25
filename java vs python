@@ -1,0 +1,50 @@
+---->  Compilation process
+  //JAVA                                                                #PYTHON
+  public class HelloWorld {                                              print("Hello World")
+    public static void main(String args[]) {
+      System.out.print("Hello World!!");
+      }
+  }
+
+
+---->  Code length
+  //JAVA                                                                #PYTHON
+  public class Square {                                                  num = 5
+    public static void main(String args[]) {                             square = num ** 2
+      int num = 5;                                                       print(f'The square of {num} is {square})
+      int square = num * num;
+      System.out.print("The square of" +num+ "is" +square);
+      }
+  }
+
+
+---->  Syntax Complexity
+  //JAVA                                                                #PYTHON
+  public class Example {                                                 x = 10
+    public static void main(String args[]) {                             if x > 5 :
+      int x = 10;                                                            print("x is greater than 5")
+      if (x > 5) {                                                       else:
+        System.out.print("x is greater that 5");                             print("x is less than 5")                    
+      }
+      else {
+        System.out.print("x is less than 5");
+      }
+    }
+}
+        
+
+---->  Ease of typing
+  //JAVA                                                                #PYTHON
+  int num = 5;                                                           num = 5
+  String name = "John";                                                  name = "John" 
+
+
+---->  Speed of execution
+  //JAVA                                                                #PYTHON
+  Java is known for its speed due to its                                 Python is often slower than Java because 
+  compilation to bytecode and the use of                                 it is interpreted and dynamically typed.
+  the Java Virtual Machine (JVM).
+
+
+
+    
