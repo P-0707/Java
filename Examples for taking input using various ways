@@ -39,8 +39,53 @@ public class BufferedReaderExample {
     System.out.println("Enter your name: ");
     String name = br.readLine();
 
+    br.close();
 
+    System.out.println("Name: " +name);
   }
 }
 
-#incomplete.............................................
+//3.  Console class
+
+import java.io.Console;
+
+public class ConsoleInputExample {
+  public static void main(String args[]) {
+    Console cl = System.console();
+
+    char[] passwordArray = cl.readPassword("Enter password");
+    String password = new String(passwordArray);
+
+    System.out.println("Password: " +password);
+  }
+}
+
+
+//4. JOptionPane
+
+import java.swing.JOptionPane;
+
+public class JOptionPaneInputExample {
+  public static void main(String args[]) {
+    String name = JOptionPane.showInputDialog("Enter your name: ");
+
+    JOptionPane.showMessageDialog(null, "Name: " +name);
+
+    System.exit(0);
+  }
+}
+
+
+//5. Command-Line arguments
+
+public class CommandLineArgumentsInputExample {
+  public static void main(String args[]) {
+    String name = args[0];
+    int age = Integer.parseInt(args[1]);
+
+    System.out.println("Name: " +name);
+    System.out.println("age: " +age);
+  }
+}
+
+
