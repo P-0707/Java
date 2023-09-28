@@ -1,0 +1,59 @@
+//we will see the different ways in which we can format the output in java
+
+//1. System.out.printf
+public class SystemOutPrintfExample {
+  public static void main(String args[]) {
+    String name = "Alice";
+    int age = 25;
+
+    System.out.printf("Name: %s, Age: %d%n", name, age);
+  }
+}
+
+//2. String.format
+public class StringFormatExample {
+  public static void main(String args[]) {
+    String name = "Bob";
+    double salary = 50000.05;
+
+    String formattedString = String.format("Name: %s, Age: %.2f",name, salary);
+    System.out.println(formattedString);
+  }
+}
+
+//3.  System.out.format
+public class SystemOutFormatExample {
+  public static void main(String args[]) {
+    String city = "New York";
+    int population = 12543324;
+
+    System.out.format("City: %s, Population: %d%n", city, population);
+  }
+}
+
+//4.  Using DecimalFormat
+public class DecimalFormatExample {
+  public static void main(String args[]) {
+    double value = 123456789.12345;
+
+    DecimalFormat df = new DecimalFormat("#,###.00");
+    String formattedValue = df.format(value);
+
+    System.out.println("FormattedValue: " + formattedValue);
+  }
+}
+
+//5.  Using StringJoiner
+import java.util.StringJoiner;
+
+public class StringJoinerExample {
+  public static void main(String args[]) {
+    StringJoiner sj =  new StringJoiner(", ", "Names: [", "]");
+    sj.add("Aline").add("Charles").add("Charlie");
+
+    System.out.println(sj.toString());
+  }
+}
+
+
+    
